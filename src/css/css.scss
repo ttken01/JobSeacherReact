@@ -1,0 +1,359 @@
+html{
+    background: #fff;
+    animation: bg 2s ease;
+}
+.deco-none{
+    text-decoration: none;
+ 
+}
+.white{
+    color: #fff;
+}
+.black{
+    color: black;
+}
+
+
+// carousel component
+
+.carousel-component{
+    position: relative;
+
+    img{
+        width:100%;
+        height:500px;
+    }
+    .form-wrapper{
+        // background:linear-gradient(45deg, #00aeb0 20%, transparent 100%) no-repeat;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        bottom: 50px;
+        // animation: colorChange 20s alternate infinite;
+    }
+}
+
+
+@keyframes colorChange{
+    from{
+        filter:hue-rotate(0deg);
+    }
+    to{
+        filter:hue-rotate(360deg);
+    }
+}
+    // Function
+@function remy($value, $base: 16px) {
+    @return ($value / $base) * 1rem;
+}
+
+
+.header-form{
+        // Variables
+    
+    $color-grey: #eee;
+    $color-grey-light: #f5f5f5;
+    $color-primary: #ffab00;
+    $radius: 3px;
+    padding: remy(32px);
+
+    margin-right: auto;
+    margin-left: auto;
+    width: remy(650px);
+    background-color: #fff;
+    border-radius: $radius;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+
+
+
+    // Mixins
+    @mixin transition($prop: all, $duration: .25s, $timing: cubic-bezier(.4,0,1,1)) {
+    transition: $prop $duration $timing;
+    }
+    h2{
+        font-size:2rem;
+        margin-bottom: 1rem;
+    }
+   button{
+       margin: 1rem;
+   }
+
+
+
+}
+
+.job-tab-wrapper{
+    h2{
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+    padding: 50px;
+    img{
+        height: 50px;
+        width: 50px;
+    }
+}
+
+
+.flex-grow{
+    padding: 1rem;
+ 
+    img{
+        width: 100%;
+        height:auto;
+    }
+    .title{
+        font-size: 1.4rem;
+        text-align: start;
+        font-weight: bold;
+    }
+    div{
+        text-align: start !important;
+    }
+    .flex{
+        display:flex;
+        align-items:center;
+    }
+    .price .location{
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+    .link{
+        text-decoration: none;
+    }
+}
+
+
+//center div
+
+.center-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+//req-email
+
+.reg-email{
+    padding: 5rem;
+    background-image: url(../../public/img/bg-4_3.jpg);
+    color: #fff;
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 5rem;
+    
+
+    }
+    p{
+        text-align: center;
+    }
+}
+
+//section companies
+
+.section-companies{
+    padding: 5rem;
+    .left{
+        width: 50%;
+        padding: 5rem;
+        background-image: url(../../public/img/bg-2.png);
+        font-size:2rem;
+
+    }
+    .title{
+        font-size:2.5rem;
+        text-align:left;
+
+        color:#ffab00;
+        margin-bottom: 2rem;
+       
+  
+     
+    }
+    .desc{
+        color: rgb(38, 99, 119);
+        text-align:right;
+    }
+
+
+}
+
+
+//footer
+
+footer{
+    background-image: url(../../public/img/bg-4_3.jpg);
+    color: #fff;
+
+    .footer__container{
+         padding: 5rem;
+
+    }
+    h2{
+        margin-bottom: 3rem;
+    }
+}
+
+
+.job-detail{
+    h2{
+        text-align: left;
+        font-size:1.5rem;
+        margin-bottom:2rem;
+        margin-top: 2rem;
+
+    }
+    font-size: 1rem;
+    .header{
+        text-align: center;
+        padding: 5rem;
+        h1{
+            font-size:2rem;
+            margin-bottom: 1rem;
+        }
+        h2{
+            text-align: center;
+            font-size:1.5rem;
+            margin-bottom:2rem;
+        }
+     
+    }
+    .body{
+        padding: 5rem;
+
+        .heading{
+            font-size:1rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .ckeditor-html{
+            margin: 3rem 0rem;
+        }
+    }
+    
+}
+
+.dashboard{
+   .name{
+       margin-top: 1rem;
+   }
+}
+
+
+.ck-editor__editable_inline {
+    min-height: 400px !important;
+}
+.ck-editor__editable {
+    min-height: 400px !important;
+}
+
+
+.post-component{
+    
+    .post{
+        margin-top: 1rem;
+    }
+}
+
+
+.comment-list{
+    margin-top: 5rem;
+    .fl{
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+
+    }
+}
+
+
+h1{
+    text-align: center;
+}
+
+
+.search-job{
+    padding: 4rem;
+    h1{
+        text-align: center;
+        font-size:2rem;
+        margin-bottom: 2rem;
+    }
+    h2{
+        margin: 3rem 0rem;
+        font-size:1.5rem;
+
+    }
+}
+
+
+
+
+.profile{
+    h2{
+        font-size:2rem;
+        margin:2rem;
+        margin-top: 5rem;
+    }
+}
+
+
+
+
+.loading {
+    display: inline-block;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+  .loading div {
+    position: absolute;
+    background: black;
+    opacity: 1;
+    border-radius: 50%;
+    animation: loading 1.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  .loading div:nth-child(2) {
+    animation-delay: -.7s;
+  }
+  @keyframes loading {
+    0% {
+      top: 28px;
+      left: 28px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: -1px;
+      left: -1px;
+      width: 58px;
+      height: 58px;
+      opacity: 0;
+    }
+  }
+
+
+  @keyframes bg {
+    0% {
+        background: #fff;
+    }
+    50% {
+      background: #000;
+    }
+    100% {
+      background: #fff;
+    }
+  }
+  
+
+ .major-wrapper{
+    margin-top: 8px;
+  }
